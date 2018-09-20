@@ -1,5 +1,6 @@
 FROM alpine:3.8
 
+RUN apk update
 RUN apk add mono -X http://dl-cdn.alpinelinux.org/alpine/edge/testing/
 
 RUN wget -P /usr/lib/mono https://dist.nuget.org/win-x86-commandline/latest/nuget.exe \
